@@ -1,0 +1,10 @@
+<% name = "Joe" %>
+<h1>Goodbye <%= name %></h1>
+
+
+
+
+    get '/goodbye' do
+        name = params["name"]
+        erb :goodbye
+    end
